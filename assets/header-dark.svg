@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 250" width="100%" height="100%">
   <defs>
     <linearGradient id="bgGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -13,34 +13,34 @@
     </pattern>
   </defs>
 
-  <rect width="900" height="240" rx="12" fill="url(#bgGradDark)" stroke="#30363d" stroke-width="1.5"/>
-  <rect width="900" height="240" rx="12" fill="url(#dotGridDark)"/>
+  <rect width="920" height="250" rx="14" fill="url(#bgGradDark)" stroke="#30363d" stroke-width="1.5"/>
+  <rect width="920" height="250" rx="14" fill="url(#dotGridDark)"/>
 
   <!-- Top bar -->
-  <text x="32" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', monospace" font-size="11" font-weight="600" fill="#58a6ff" letter-spacing="1.5">LEAD DATA ANALYST @ JOBIAK</text>
+  <text x="36" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', monospace" font-size="11" font-weight="600" fill="#58a6ff" letter-spacing="1.5">LEAD DATA ANALYST &amp; SYSTEMS ENGINEER</text>
   
-  <g transform="translate(685, 27)">
-    <rect width="183" height="26" rx="13" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <g transform="translate(700, 28)">
+    <rect width="184" height="26" rx="13" fill="#161b22" stroke="#30363d" stroke-width="1"/>
     <circle cx="16" cy="13" r="4" fill="#3fb950"/>
     <text x="28" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="11" font-weight="500" fill="#c9d1d9" letter-spacing="0.5">OPEN FOR PROJECTS</text>
   </g>
 
   <!-- Main Headline -->
-  <text x="32" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="38" font-weight="800" fill="url(#textGradDark)" letter-spacing="-0.8">Sai Dixit Naidu</text>
+  <text x="36" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="40" font-weight="800" fill="url(#textGradDark)" letter-spacing="-1">Sai Dixit Naidu</text>
   
-  <text x="32" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="15" font-weight="400" fill="#8b949e">
+  <text x="36" y="154" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="16" font-weight="400" fill="#8b949e">
     Working with data, building with Python, automating the rest.
   </text>
 
   <!-- Bottom Divider Line -->
-  <line x1="32" y1="184" x2="868" y2="184" stroke="#21262d" stroke-width="1"/>
+  <line x1="36" y1="190" x2="884" y2="190" stroke="#21262d" stroke-width="1"/>
 
   <!-- Footer meta -->
-  <text x="32" y="213" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#58a6ff">
+  <text x="36" y="222" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#58a6ff">
     📍 17.6868° N, 83.2185° E · Visakhapatnam, India
   </text>
   
-  <text x="868" y="213" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#8b949e">
+  <text x="884" y="222" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#8b949e">
     saidixit.vercel.app ↗
   </text>
 </svg>
