@@ -1,14 +1,8 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img alt="Sai Dixit Naidu — Lead Data Analyst & Systems Engineer" src="assets/header-dark.svg" width="100%">
-</picture>
+# Sai Dixit Naidu
 
-<div align="center">
-
-[saidixit.vercel.app](https://saidixit.vercel.app/) &nbsp;·&nbsp; [Works](https://saidixit.vercel.app/works/) &nbsp;·&nbsp; [Experience](https://saidixit.vercel.app/experience) &nbsp;·&nbsp; [Writing](https://saidixit.vercel.app/blog/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/sai-dixit) &nbsp;·&nbsp; [Twitter / X](https://x.com/SaiDixitNaidu) &nbsp;·&nbsp; [saidixitn@gmail.com](mailto:saidixitn@gmail.com)
-
-</div>
+> **Lead Data Analyst & Systems Automation Engineer**  
+> *Working with data, building with Python, automating the rest.*  
+> Visakhapatnam, India · [saidixit.vercel.app](https://saidixit.vercel.app/) · [Works](https://saidixit.vercel.app/works/) · [Writing](https://saidixit.vercel.app/blog/) · [LinkedIn](https://www.linkedin.com/in/sai-dixit) · [Twitter / X](https://x.com/SaiDixitNaidu) · [saidixitn@gmail.com](mailto:saidixitn@gmail.com)
 
 ---
 
@@ -16,18 +10,18 @@
 
 I find where information gets stuck, then build what gets it moving.
 
-I work on high-volume data querying, search engine indexing architecture, and deterministic automation. Most of my time is spent inside job market datasets, Google for Jobs schema structures, BigQuery, and writing Python pipelines that eliminate manual verification.
+I work across high-volume data querying, search engine indexing architecture, and deterministic background automation. Most of my time is spent inside job market datasets, Google for Jobs schema structures, BigQuery data pipelines, and writing Python services that eliminate manual verification.
 
 ```
 01 / Spot the pattern  — Locate where data gets stuck or why a check is done twice.
 02 / Build the fix      — Write the script, repair the schema, or design the tool.
-03 / Automate it        — If it runs on a schedule, code should do it in the background.
+03 / Automate it        — If it runs on a schedule, code should handle it in the background.
 04 / Keep it calm       — No bloat. Software that stays out of your way and does its job.
 ```
 
 ---
 
-### Selected Repositories & Systems
+### Selected Systems & Repositories
 
 #### [Python](https://github.com/saidixitn/Python)
 `Data Operations` · `BigQuery Sync` · `MongoDB Pipelines` · `PM2 Daemons`
@@ -52,17 +46,6 @@ A modular, high-throughput Node.js backend engine designed for multi-tenant data
 
 ---
 
-#### [glance](https://github.com/saidixitn/glance)
-`Native macOS` · `Swift & SwiftUI` · `Apple Vision` · `On-Device Core ML`
-
-Native macOS application bringing biometric Face ID unlock to MacBooks, integrated seamlessly inside the display notch and Dynamic Island.
-
-- **On-Device Machine Learning**: Employs Apple's Vision and Core ML frameworks to execute facial recognition and liveness analysis entirely locally.
-- **Zero Network Footprint**: Biometric vectors and login keys never touch a network socket or persist to disk; video frames are evaluated strictly in memory.
-- **Keychain Integration**: Gates the system lock screen through direct macOS Keychain encryption APIs.
-
----
-
 #### [Job-Posting-Alerts](https://github.com/saidixitn/Job-Posting-Alerts)
 `Differential Monitoring` · `Google for Jobs` · `Schema.org` · `Webhook Telemetry`
 
@@ -71,6 +54,17 @@ Autonomous telemetry system designed around the rule: *alert on change, not on s
 - **Diff-Based Detection**: Compares successive feed states rather than checking static thresholds, eliminating alert fatigue.
 - **Schema Validation**: Validates JSON-LD and microdata syntax against strict Google Search Console guidelines.
 - **Operational Dispatch**: Instant webhook notifications and Telegram alerts with actionable context.
+
+---
+
+#### [jobinsights](https://github.com/saidixitn/jobinsights)
+`Privacy Telemetry` · `Sub-2KB Footprint` · `Core Web Vitals` · `Attribution`
+
+A privacy-friendly web analytics and revenue attribution engine built as a lightweight, zero-cookie alternative to bloated tracking suites.
+
+- **Cookie-Free Architecture**: Full compliance with privacy regulations without requiring intrusive consent banners.
+- **Sub-2KB Telemetry Ingest**: Ultra-lightweight telemetry collection with zero penalty on Lighthouse performance or Core Web Vitals.
+- **Revenue Attribution**: Connects user acquisition funnels directly to downstream payment webhooks and session events.
 
 ---
 
@@ -96,13 +90,10 @@ A modular collection of production automation scripts and background daemons han
 
 ---
 
-#### [wrapper-studio](https://github.com/saidixitn/wrapper-studio)
-`Creative Engineering` · `Semantic Web` · `CSS Architecture` · `Fluid Motion`
+#### [google-paa-scraper](https://github.com/saidixitn/google-paa-scraper)
+`Search Intelligence` · `SERP Crawler` · `NLP Trees` · `Python`
 
-Digital product showcase demonstrating that fast, responsive, and visually refined web interfaces do not require bloated client-side JavaScript frameworks.
-
-- **Motion Architecture**: Handcrafted CSS custom properties and cubic-bezier curves for fluid interactions.
-- **Responsive Layouts**: Strict semantic HTML5 and clean design tokens optimized for performance.
+Automated search extraction crawler targeting Google "People Also Ask" dynamic question graphs. Traverses recursive question hierarchies to map search intent and semantic relationships for technical SEO research.
 
 ---
 
@@ -121,11 +112,11 @@ automation_orchestration:
 
 artificial_intelligence:
   models_evaluation:   [LLMs, OpenAI API, Ollama, Prompt Architecture, Output Evaluation]
-  certifications:      ["AI Foundations" by OpenAI Academy (ID: c92ba288-81e6-4a41-ba20-f11055010ed8)]
+  credentials:         ["AI Foundations" by OpenAI Academy (ID: c92ba288-81e6-4a41-ba20-f11055010ed8)]
 
-platforms_interfaces:
-  native_systems:      [Swift, SwiftUI (macOS Vision & Core ML)]
-  frontend_craft:      [Vanilla JavaScript, Node.js, Semantic HTML5, Pure CSS Motion, Zero-Framework UI]
+web_systems_tooling:
+  backend_runtimes:    [Node.js, Express, Python (FastAPI / Flask)]
+  frontend_philosophy: [Vanilla JavaScript, Semantic HTML5, Pure CSS Motion, Zero-Framework UI]
 ```
 
 ---
@@ -143,13 +134,14 @@ platforms_interfaces:
 
 ---
 
-### Contribution Timeline
+### Verified Online Profiles
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/saidixitn/saidixitn/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/saidixitn/saidixitn/output/github-contribution-grid-snake.svg">
-  <img alt="Contribution Activity" src="https://raw.githubusercontent.com/saidixitn/saidixitn/output/github-contribution-grid-snake-dark.svg" width="100%">
-</picture>
+- **Website**: [saidixit.vercel.app](https://saidixit.vercel.app/)
+- **Selected Works**: [saidixit.vercel.app/works](https://saidixit.vercel.app/works/)
+- **Experience**: [saidixit.vercel.app/experience](https://saidixit.vercel.app/experience)
+- **LinkedIn**: [linkedin.com/in/sai-dixit](https://www.linkedin.com/in/sai-dixit)
+- **Twitter / X**: [@SaiDixitNaidu](https://x.com/SaiDixitNaidu)
+- **Direct Contact**: [saidixitn@gmail.com](mailto:saidixitn@gmail.com)
 
 ---
 
