@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f6f8fa"/>
+    </linearGradient>
+    <pattern id="dotGridLight" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#d0d7de" opacity="0.65"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="240" rx="12" fill="url(#bgGradLight)" stroke="#d0d7de" stroke-width="1.5"/>
+  <rect width="900" height="240" rx="12" fill="url(#dotGridLight)"/>
+
+  <!-- Top bar -->
+  <text x="32" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', monospace" font-size="11" font-weight="600" fill="#0969da" letter-spacing="1.5">LEAD DATA ANALYST @ JOBIAK</text>
+  
+  <g transform="translate(685, 27)">
+    <rect width="183" height="26" rx="13" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+    <circle cx="16" cy="13" r="4" fill="#1a7f37"/>
+    <text x="28" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="11" font-weight="500" fill="#24292f" letter-spacing="0.5">OPEN FOR PROJECTS</text>
+  </g>
+
+  <!-- Main Headline -->
+  <text x="32" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="38" font-weight="800" fill="#1f2328" letter-spacing="-0.8">Sai Dixit Naidu</text>
+  
+  <text x="32" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="15" font-weight="400" fill="#57606a">
+    Working with data, building with Python, automating the rest.
+  </text>
+
+  <!-- Bottom Divider Line -->
+  <line x1="32" y1="184" x2="868" y2="184" stroke="#eaeef2" stroke-width="1"/>
+
+  <!-- Footer meta -->
+  <text x="32" y="213" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#0969da">
+    📍 17.6868° N, 83.2185° E · Visakhapatnam, India
+  </text>
+  
+  <text x="868" y="213" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#57606a">
+    saidixit.vercel.app ↗
+  </text>
+</svg>
