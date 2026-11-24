@@ -4,13 +4,26 @@
 > *Working with data, building with Python, automating the rest.*  
 > Visakhapatnam, India · [saidixit.vercel.app](https://saidixit.vercel.app/) · [Works](https://saidixit.vercel.app/works/) · [Writing](https://saidixit.vercel.app/blog/) · [LinkedIn](https://www.linkedin.com/in/sai-dixit) · [Twitter / X](https://x.com/SaiDixitNaidu) · [saidixitn@gmail.com](mailto:saidixitn@gmail.com)
 
+```text
+┌────────────────────────────────────────────────────────────────────────┐
+│  SAI DIXIT NAIDU // SYSTEMS & DATA ARCHITECTURE                        │
+│  Lead Data Analyst · Python · BigQuery · Search Engine Indexing        │
+├────────────────────────────────────────────────────────────────────────┤
+│  CORE FOCUS   High-throughput data pipelines & search schema telemetry │
+│  CORE RULE    Alert on change, never on state (detection is a diff)    │
+│  RUNTIMES     Python 3.12 · Node.js 20 · Linux PM2 Daemons · BigQuery  │
+│  LOCATION     Visakhapatnam, India · saidixit.vercel.app               │
+│  AVAILABILITY Open to high-impact data systems & engineering roles     │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
 ---
 
 ### Overview
 
 I find where information gets stuck, then build what gets it moving.
 
-I work across high-volume data querying, search engine indexing architecture, and deterministic background automation. Most of my time is spent inside job market datasets, Google for Jobs schema structures, BigQuery data pipelines, and writing Python services that eliminate manual verification.
+My work centers on high-volume data querying, search engine indexing architecture, and deterministic background automation. Most of my time is spent inside job market datasets, Google for Jobs schema structures, BigQuery data pipelines, and writing Python services that eliminate manual verification.
 
 ```
 01 / Spot the pattern  — Locate where data gets stuck or why a check is done twice.
@@ -21,17 +34,42 @@ I work across high-volume data querying, search engine indexing architecture, an
 
 ---
 
-### Selected Systems & Repositories
+### System Architecture Flow
+
+How my core repositories and production services interconnect across ingestion, validation, warehousing, and alerting:
+
+```text
+[ High-Volume Partner Feeds ]
+             │
+             ▼
+[ Ingestion & Headless Extractors ] ──> ( saidixitn/Python · PM2 Daemons )
+             │
+             ▼
+[ Clean Staging & Query Layer ] ──────> ( saidixitn/antigravity-nodejs · MongoDB )
+             │
+    ┌────────┴────────────────────────┐
+    ▼                                 ▼
+[ BigQuery Sync ]            [ Schema Sentinel ]
+( Automated Warehouse ETL )  ( Google for Jobs JSON-LD )
+    │                                 │
+    ▼                                 ▼
+[ Automated Reporting ]      [ Differential Alerting ]
+( Sheets API / Email )       ( Telegram / Webhook Diffs )
+```
+
+---
+
+### Featured Systems & Repositories
 
 #### [Python](https://github.com/saidixitn/Python)
 `Data Operations` · `BigQuery Sync` · `MongoDB Pipelines` · `PM2 Daemons`
 
 A production operations fleet of PM2-scheduled Python services managing automated data extraction, warehouse ingestion, and live reporting.
 
-- **BigQuery Synchronization**: Streams operational job telemetry and partner records into Google BigQuery with automated schema reconciliation.
-- **Feed & Proxy Services**: Headless data export pipelines and proxy scrapers running continuous sanitation on high-volume feeds.
-- **Revenue Reconciliation**: Automated data pipelines correlating domain traffic, conversion attribution, and Google Sheets ledger synchronization.
-- **Resilient Execution**: Managed under PM2 process orchestration with automated recovery and zero hardcoded secrets.
+- **BigQuery Synchronization**: Streams operational job telemetry and partner records into Google BigQuery with automated schema reconciliation (`Stats/bigquery_sync.py`).
+- **Feed & Proxy Services**: Headless data export pipelines and proxy scrapers running continuous sanitation on high-volume feeds (`Proxy/`).
+- **Revenue Reconciliation**: Automated data pipelines correlating domain traffic, conversion attribution, and Google Sheets ledger synchronization (`Revenue/`).
+- **Process Orchestration**: Managed under Linux PM2 process trees with automated restarts, zero hardcoded secrets, and self-healing error boundaries.
 
 ---
 
@@ -40,9 +78,9 @@ A production operations fleet of PM2-scheduled Python services managing automate
 
 A modular, high-throughput Node.js backend engine designed for multi-tenant data pipelines and search engine structured data validation without heavy ORM overhead.
 
-- **Dual-Mode MongoDB Layer**: Small aggregation and local staging tasks default to local instances, while remote production clusters are resolved dynamically via credential discovery.
+- **Dual-Mode MongoDB Layer**: Small aggregation and local staging tasks default to local instances (`127.0.0.1`), while remote production clusters are resolved dynamically via credential discovery (`core/mongo.js`).
 - **Optimized Ingestion**: Leverages compound index prefixes and cursor streaming to eliminate full collection scans on large datasets.
-- **REST Microservice**: Express-based endpoint layer with interactive HTTP test notebooks for one-click verification.
+- **REST Microservice**: Express-based endpoint layer with interactive HTTP test notebooks for one-click verification (`api.js` & `api.http`).
 
 ---
 
@@ -121,7 +159,9 @@ web_systems_tooling:
 
 ---
 
-### Writing & Notes
+### Field Notes & Technical Writing
+
+Essays and post-mortems from building and operating production pipelines:
 
 - [Alerts people trust: what I learned building a monitoring bot](https://saidixit.vercel.app/blog/alerts-people-trust)  
   *Why alerting on change matters more than alerting on state, and how to stop alert fatigue.*
