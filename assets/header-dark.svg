@@ -1,46 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 250" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 230" width="100%" height="100%">
   <defs>
-    <linearGradient id="bgGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#161b22"/>
+    <linearGradient id="bgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d12"/>
+      <stop offset="100%" stop-color="#11161d"/>
     </linearGradient>
-    <linearGradient id="textGradDark" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#c9d1d9"/>
+    <linearGradient id="textDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f0f6fc"/>
+      <stop offset="100%" stop-color="#8b949e"/>
     </linearGradient>
-    <pattern id="dotGridDark" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#30363d" opacity="0.45"/>
+    <pattern id="gridDark" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#30363d" opacity="0.6"/>
     </pattern>
   </defs>
 
-  <rect width="920" height="250" rx="14" fill="url(#bgGradDark)" stroke="#30363d" stroke-width="1.5"/>
-  <rect width="920" height="250" rx="14" fill="url(#dotGridDark)"/>
+  <rect width="920" height="230" rx="8" fill="url(#bgDark)" stroke="#30363d" stroke-width="1"/>
+  <rect width="920" height="230" rx="8" fill="url(#gridDark)"/>
 
-  <!-- Top bar -->
-  <text x="36" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', monospace" font-size="11" font-weight="600" fill="#58a6ff" letter-spacing="1.5">LEAD DATA ANALYST &amp; SYSTEMS ENGINEER</text>
+  <!-- Top System Meta -->
+  <text x="36" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="500" fill="#58a6ff" letter-spacing="1.2">SYSTEM // DATA SYSTEMS &amp; AUTOMATION</text>
   
-  <g transform="translate(700, 28)">
-    <rect width="184" height="26" rx="13" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-    <circle cx="16" cy="13" r="4" fill="#3fb950"/>
-    <text x="28" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="11" font-weight="500" fill="#c9d1d9" letter-spacing="0.5">OPEN FOR PROJECTS</text>
+  <g transform="translate(730, 28)">
+    <rect width="154" height="24" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <circle cx="14" cy="12" r="3.5" fill="#3fb950"/>
+    <text x="26" y="16" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="600" fill="#c9d1d9" letter-spacing="0.5">OPEN TO WORK</text>
   </g>
 
-  <!-- Main Headline -->
-  <text x="36" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="40" font-weight="800" fill="url(#textGradDark)" letter-spacing="-1">Sai Dixit Naidu</text>
+  <!-- Name Headline -->
+  <text x="36" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="42" font-weight="700" fill="url(#textDark)" letter-spacing="-1.2">Sai Dixit Naidu</text>
   
-  <text x="36" y="154" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="16" font-weight="400" fill="#8b949e">
+  <!-- Philosophy subline -->
+  <text x="36" y="146" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="15" font-weight="400" fill="#8b949e" letter-spacing="-0.2">
     Working with data, building with Python, automating the rest.
   </text>
 
-  <!-- Bottom Divider Line -->
-  <line x1="36" y1="190" x2="884" y2="190" stroke="#21262d" stroke-width="1"/>
+  <!-- Thin Rule -->
+  <line x1="36" y1="178" x2="884" y2="178" stroke="#21262d" stroke-width="1"/>
 
-  <!-- Footer meta -->
-  <text x="36" y="222" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#58a6ff">
-    📍 17.6868° N, 83.2185° E · Visakhapatnam, India
+  <!-- Coordinates & Domain -->
+  <text x="36" y="206" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6e7681">
+    17.6868° N, 83.2185° E · VISAKHAPATNAM, INDIA
   </text>
   
-  <text x="884" y="222" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#8b949e">
-    saidixit.vercel.app ↗
+  <text x="884" y="206" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#58a6ff">
+    saidixit.vercel.app →
   </text>
 </svg>
