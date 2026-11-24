@@ -27,67 +27,82 @@ I work on high-volume data querying, search engine indexing architecture, and de
 
 ---
 
-### Selected Systems & Repositories
+### Selected Repositories & Systems
 
-#### [glance](https://github.com/saidixitn/glance)
-`macOS Biometrics` · `Swift` · `Core ML` · `Vision Framework` · `On-Device Security`
+#### [Python](https://github.com/saidixitn/Python)
+`Data Operations` · `BigQuery Sync` · `MongoDB Pipelines` · `PM2 Daemons`
 
-Face unlock for macOS living directly inside the MacBook notch and Dynamic Island. Built using Apple Vision and Core ML frameworks to perform liveness detection and facial recognition on-device. Face vectors and credentials never touch a network socket.
+A production operations fleet of PM2-scheduled Python services managing automated data extraction, warehouse ingestion, and live reporting.
 
-- Operates in memory without persisting video frames to disk
-- Integrated with local macOS Keychain for credential gating
-- Responsive animations engineered specifically for notch geometries
-
----
-
-#### [Job-Posting-Alerts](https://github.com/saidixitn/Job-Posting-Alerts)
-`Differential Monitoring` · `Python` · `Google for Jobs` · `Search Console API`
-
-Autonomous telemetry engine tracking millions of structured job listings. Built on the principle that alerts should fire on *change*, not on *state*—comparing historical run diffs to detect schema errors and indexing drops before listings disappear from search results.
-
-- Differential state analysis across successive feed ingestions
-- Automated Schema.org structure validation and anomaly interception
-- Headless webhook dispatch for immediate operational intervention
+- **BigQuery Synchronization**: Streams operational job telemetry and partner records into Google BigQuery with automated schema reconciliation.
+- **Feed & Proxy Services**: Headless data export pipelines and proxy scrapers running continuous sanitation on high-volume feeds.
+- **Revenue Reconciliation**: Automated data pipelines correlating domain traffic, conversion attribution, and Google Sheets ledger synchronization.
+- **Resilient Execution**: Managed under PM2 process orchestration with automated recovery and zero hardcoded secrets.
 
 ---
 
 #### [antigravity-nodejs](https://github.com/saidixitn/antigravity-nodejs)
-`Data Systems` · `Node.js` · `MongoDB Aggregations` · `REST Engine`
+`Backend Engine` · `Dual-Mode Mongo` · `Cursor Streaming` · `REST API`
 
-High-throughput MongoDB pipeline engine and REST orchestrator. Designed for clean multi-tenant isolation, high-volume ingestion, and complex analytical aggregations without heavy ORM overhead.
+A modular, high-throughput Node.js backend engine designed for multi-tenant data pipelines and search engine structured data validation without heavy ORM overhead.
 
-- Tailored MongoDB aggregation pipelines for performant querying
-- Resilient asynchronous task handling and clean error boundaries
-- Lightweight, zero-bloat REST API architecture
+- **Dual-Mode MongoDB Layer**: Small aggregation and local staging tasks default to local instances, while remote production clusters are resolved dynamically via credential discovery.
+- **Optimized Ingestion**: Leverages compound index prefixes and cursor streaming to eliminate full collection scans on large datasets.
+- **REST Microservice**: Express-based endpoint layer with interactive HTTP test notebooks for one-click verification.
+
+---
+
+#### [glance](https://github.com/saidixitn/glance)
+`Native macOS` · `Swift & SwiftUI` · `Apple Vision` · `On-Device Core ML`
+
+Native macOS application bringing biometric Face ID unlock to MacBooks, integrated seamlessly inside the display notch and Dynamic Island.
+
+- **On-Device Machine Learning**: Employs Apple's Vision and Core ML frameworks to execute facial recognition and liveness analysis entirely locally.
+- **Zero Network Footprint**: Biometric vectors and login keys never touch a network socket or persist to disk; video frames are evaluated strictly in memory.
+- **Keychain Integration**: Gates the system lock screen through direct macOS Keychain encryption APIs.
+
+---
+
+#### [Job-Posting-Alerts](https://github.com/saidixitn/Job-Posting-Alerts)
+`Differential Monitoring` · `Google for Jobs` · `Schema.org` · `Webhook Telemetry`
+
+Autonomous telemetry system designed around the rule: *alert on change, not on state*. Evaluates millions of structured listings to detect schema anomalies and crawl drops before listings disappear from Google for Jobs.
+
+- **Diff-Based Detection**: Compares successive feed states rather than checking static thresholds, eliminating alert fatigue.
+- **Schema Validation**: Validates JSON-LD and microdata syntax against strict Google Search Console guidelines.
+- **Operational Dispatch**: Instant webhook notifications and Telegram alerts with actionable context.
 
 ---
 
 #### [daybook](https://github.com/saidixitn/daybook)
-`Operational Ledger` · `JavaScript` · `Telemetry` · `Zero-Backend`
+`Developer Ledger` · `Local-First` · `Execution Telemetry` · `Zero-Backend`
 
-A focused, local-first execution tracker and developer ledger. Built to record task lifecycles, script run histories, and operational notes without relying on external server infrastructure.
+A focused, distraction-free logging interface and operational ledger designed to track task lifecycles, script run histories, and daily sprint progress without server or database dependencies.
 
-- Fast, client-side persistence with minimal runtime footprint
-- Uncluttered interface designed for quick status checks and logging
-- Clean separation between recording and viewing data
+- **Zero-Backend Architecture**: Runs entirely in the browser with fast, local persistence.
+- **Execution Tracking**: Clean timeline view separating active development from historical run logs.
+- **Minimal Footprint**: Pure semantic web stack with zero framework overhead.
 
 ---
 
 #### [Automation](https://github.com/saidixitn/Automation)
-`Headless Fleet` · `Python` · `Cron Daemons` · `Linux Systems`
+`Headless Fleet` · `Scheduled Workers` · `Data Sanitation` · `Linux Daemons`
 
-A modular suite of production Python daemons, cron workers, and headless scrapers handling recurring ETL workloads, data normalization, and system checks without human intervention.
+A modular collection of production automation scripts and background daemons handling unattended daily workloads.
 
-- Deterministic workers designed to fail safely and report anomalies
-- Automated data extraction and partner feed sanitation pipelines
-- Minimal dependencies with straightforward CLI invocation
+- **Headless Extraction**: Scrapers and API clients built for resilient long-running cron jobs.
+- **Automated Reporting**: Generates and dispatches daily operational reports directly via SMTP and webhooks.
+- **Deterministic Handlers**: Script execution with clean exit states, detailed logging, and safe fallback handling.
 
 ---
 
 #### [wrapper-studio](https://github.com/saidixitn/wrapper-studio)
-`Creative Engineering` · `Semantic Web` · `Motion Design` · `HTML5 / CSS3`
+`Creative Engineering` · `Semantic Web` · `CSS Architecture` · `Fluid Motion`
 
-Digital product showcase demonstrating modern layout techniques, fluid CSS transitions, and semantic architecture. Proof that fast, interactive web experiences do not require heavy JavaScript frameworks.
+Digital product showcase demonstrating that fast, responsive, and visually refined web interfaces do not require bloated client-side JavaScript frameworks.
+
+- **Motion Architecture**: Handcrafted CSS custom properties and cubic-bezier curves for fluid interactions.
+- **Responsive Layouts**: Strict semantic HTML5 and clean design tokens optimized for performance.
 
 ---
 
@@ -96,21 +111,21 @@ Digital product showcase demonstrating modern layout techniques, fluid CSS trans
 ```yaml
 data_infrastructure:
   querying_storage:    [Python, SQL, Google BigQuery, MongoDB, Pandas, NumPy]
-  search_intelligence: [Google for Jobs, Google Search Console, Schema.org, Structured Data, Technical SEO]
-  pipelines:           [Feed Sanitation, Schema Verification, Indexing Telemetry, Run Diffs]
+  search_intelligence: [Google for Jobs, Google Search Console API, Schema.org, Structured Data, Technical SEO]
+  pipelines_etl:       [BigQuery Sync, Feed Sanitation, Schema Anomaly Detection, State Diffs]
 
-automation_systems:
-  orchestration:       [GitHub Actions, Docker, n8n, Headless Workers, Linux Daemons]
-  monitoring:          [Change-Detection Webhooks, Indexing Alerts, Cron Schedulers]
-  integrations:        [REST APIs, WebSockets, Local Sockets, Vercel Edge Functions]
+automation_orchestration:
+  runtime_daemons:     [PM2, Cron, Linux Daemons, Docker, Headless Scrapers]
+  monitoring_alerts:   [Change-Detection Webhooks, Telegram Bots, SMTP Alerting, Feed Health Checks]
+  integrations:        [REST APIs, Google Sheets API, WebSockets, Vercel Edge Runtime]
 
 artificial_intelligence:
   models_evaluation:   [LLMs, OpenAI API, Ollama, Prompt Architecture, Output Evaluation]
-  credentials:         ["AI Foundations" by OpenAI Academy (ID: c92ba288-81e6-4a41-ba20-f11055010ed8)]
+  certifications:      ["AI Foundations" by OpenAI Academy (ID: c92ba288-81e6-4a41-ba20-f11055010ed8)]
 
 platforms_interfaces:
   native_systems:      [Swift, SwiftUI (macOS Vision & Core ML)]
-  web_craft:           [Vanilla JavaScript, Node.js, Semantic HTML5, Pure CSS Motion, Zero-Framework UI]
+  frontend_craft:      [Vanilla JavaScript, Node.js, Semantic HTML5, Pure CSS Motion, Zero-Framework UI]
 ```
 
 ---
@@ -128,19 +143,13 @@ platforms_interfaces:
 
 ---
 
-### Telemetry
+### Contribution Timeline
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/saidixitn/saidixitn/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/saidixitn/saidixitn/output/github-contribution-grid-snake.svg">
   <img alt="Contribution Activity" src="https://raw.githubusercontent.com/saidixitn/saidixitn/output/github-contribution-grid-snake-dark.svg" width="100%">
 </picture>
-
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=saidixitn&show_icons=true&theme=github_dark&hide_border=true&bg_color=00000000&text_color=8b949e&icon_color=58a6ff&title_color=f0f6fc" alt="GitHub Metrics" height="145" />
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=saidixitn&layout=compact&theme=github_dark&hide_border=true&bg_color=00000000&text_color=8b949e&title_color=f0f6fc" alt="Top Languages" height="145" />
-</p>
 
 ---
 
