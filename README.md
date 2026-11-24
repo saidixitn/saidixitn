@@ -1,203 +1,107 @@
-<div align="center">
-
 # Sai Dixit Naidu
 
-**Lead Data Analyst & Systems Automation Engineer**  
-*Working with data, building with Python, automating the rest.*
+Building data pipelines, automation scripts, and lightweight web tools.
 
-[Portfolio](https://saidixit.vercel.app/) &nbsp;·&nbsp; [Works](https://saidixit.vercel.app/works/) &nbsp;·&nbsp; [Experience](https://saidixit.vercel.app/experience) &nbsp;·&nbsp; [Writing](https://saidixit.vercel.app/blog/) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/sai-dixit) &nbsp;·&nbsp; [Twitter / X](https://x.com/SaiDixitNaidu) &nbsp;·&nbsp; [saidixitn@gmail.com](mailto:saidixitn@gmail.com)
-
-<br />
-
-<table>
-  <tr>
-    <td align="center" width="25%">
-      <strong>Millions</strong><br />
-      <sub>Listings Indexed</sub>
-    </td>
-    <td align="center" width="25%">
-      <strong>&lt; 2 KB</strong><br />
-      <sub>Telemetry Footprint</sub>
-    </td>
-    <td align="center" width="25%">
-      <strong>Zero</strong><br />
-      <sub>Third-Party Cookies</sub>
-    </td>
-    <td align="center" width="25%">
-      <strong>24 / 7</strong><br />
-      <sub>Autonomous Daemons</sub>
-    </td>
-  </tr>
-</table>
-
-</div>
+[Website](https://saidixit.vercel.app/) · [Works](https://saidixit.vercel.app/works/) · [Writing](https://saidixit.vercel.app/blog/) · [LinkedIn](https://www.linkedin.com/in/sai-dixit) · [Twitter / X](https://x.com/SaiDixitNaidu) · [saidixitn@gmail.com](mailto:saidixitn@gmail.com)
 
 ---
 
 ### About
 
-I find where information gets stuck, then build what gets it moving.
+I'm a developer based in Visakhapatnam, India.
 
-My work centers on high-volume data querying, search engine indexing architecture, and deterministic background automation. Most of my time is spent inside job market datasets, Google for Jobs schema structures, BigQuery data pipelines, and writing Python services that eliminate manual verification.
+I like building software that quietly does real work in the background. Most of my day is spent writing Python scripts, working with databases like BigQuery and MongoDB, and building automation that removes repetitive human effort.
 
-```
-01 / Spot the pattern  — Locate where data gets stuck or why a check is done twice.
-02 / Build the fix      — Write the script, repair the schema, or design the tool.
-03 / Automate it        — If it runs on a schedule, code should handle it in the background.
-04 / Keep it calm       — No bloat. Software that stays out of your way and does its job.
-```
-
----
-
-### Core Systems & Repositories
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/saidixitn/Python">Python</a></h3>
-      <p><strong>Production Data Operations, BigQuery Sync &amp; PM2 Fleet</strong></p>
-      <p>Continuous pipeline orchestrator streaming live job telemetry into Google BigQuery, running proxy feed extraction, and managing automated revenue reconciliation.</p>
-      <p>
-        <kbd>Python</kbd> <kbd>BigQuery</kbd> <kbd>MongoDB</kbd> <kbd>PM2</kbd> <kbd>Sheets API</kbd>
-      </p>
-      <details>
-        <summary><b>Key Subsystems &amp; Implementation</b></summary>
-        <ul>
-          <li><code>Stats/bigquery_sync.py</code> — High-throughput warehouse ETL streaming operational records into BigQuery.</li>
-          <li><code>Proxy/</code> — Headless proxy scrapers and automated feed export handlers.</li>
-          <li><code>Revenue/</code> — Automated revenue attribution and Google Sheets ledger synchronization.</li>
-          <li>Managed under PM2 process trees with automatic restarts and zero hardcoded credentials.</li>
-        </ul>
-      </details>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/saidixitn/antigravity-nodejs">antigravity-nodejs</a></h3>
-      <p><strong>Multi-Tenant MongoDB Engine &amp; REST Microservice</strong></p>
-      <p>A modular Node.js backend engine designed for high-volume data ingestion, complex aggregation pipelines, and search engine structured data validation without heavy ORM overhead.</p>
-      <p>
-        <kbd>Node.js</kbd> <kbd>MongoDB</kbd> <kbd>Express</kbd> <kbd>REST API</kbd>
-      </p>
-      <details>
-        <summary><b>Key Subsystems &amp; Implementation</b></summary>
-        <ul>
-          <li><code>core/mongo.js</code> — Dual-mode MongoDB layer (defaults temporary staging tasks to local instances; dynamically resolves remote clusters).</li>
-          <li>Compound index prefixes and cursor streaming to eliminate full collection scans.</li>
-          <li><code>api.js</code> &amp; <code>api.http</code> — Fast REST endpoints with interactive 1-click verification notebooks.</li>
-        </ul>
-      </details>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/saidixitn/Job-Posting-Alerts">Job-Posting-Alerts</a></h3>
-      <p><strong>Differential Search Engine Indexing Telemetry</strong></p>
-      <p>Autonomous monitoring engine built on the principle: <em>alert on change, not on state</em>. Compares historical run diffs across structured listings to catch Google for Jobs schema drops before listings vanish from search.</p>
-      <p>
-        <kbd>Python</kbd> <kbd>Google for Jobs</kbd> <kbd>Schema.org</kbd> <kbd>Webhooks</kbd>
-      </p>
-      <details>
-        <summary><b>Key Subsystems &amp; Implementation</b></summary>
-        <ul>
-          <li>Diff-based anomaly detection across successive partner feed ingestions.</li>
-          <li>Structured data validation against Google Search Console indexing standards.</li>
-          <li>Automated Telegram and webhook dispatch with actionable issue context.</li>
-        </ul>
-      </details>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/saidixitn/jobinsights">jobinsights</a></h3>
-      <p><strong>Privacy-First Web Telemetry Platform</strong></p>
-      <p>A lightweight, cookie-free web telemetry and revenue attribution engine built as an alternative to bloated analytics trackers. Designed for high accuracy with zero user tracking cookies.</p>
-      <p>
-        <kbd>JavaScript</kbd> <kbd>Edge Runtime</kbd> <kbd>Web Vitals</kbd> <kbd>Attribution</kbd>
-      </p>
-      <details>
-        <summary><b>Key Subsystems &amp; Implementation</b></summary>
-        <ul>
-          <li>100% cookie-free by default; GDPR and privacy-compliant without cookie banners.</li>
-          <li>Sub-2KB ingestion footprint with zero impact on Core Web Vitals or page speed.</li>
-          <li>Attribution pipelines linking visitor funnels to payment webhooks.</li>
-        </ul>
-      </details>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/saidixitn/daybook">daybook</a></h3>
-      <p><strong>Zero-Backend Developer Ledger &amp; Task Tracker</strong></p>
-      <p>A focused, local-first execution tracker and operational ledger built to capture script run histories, sprint notes, and task states with zero database dependencies.</p>
-      <p>
-        <kbd>JavaScript</kbd> <kbd>Local-First</kbd> <kbd>Semantic Web</kbd> <kbd>Zero-Backend</kbd>
-      </p>
-      <details>
-        <summary><b>Key Subsystems &amp; Implementation</b></summary>
-        <ul>
-          <li>Fast client-side persistence with instant launch and zero setup.</li>
-          <li>Clean distraction-free timeline interface.</li>
-          <li>Zero external server or database overhead.</li>
-        </ul>
-      </details>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/saidixitn/Automation">Automation</a></h3>
-      <p><strong>Headless Script Fleet &amp; Scheduled Cloud Daemons</strong></p>
-      <p>A modular collection of production automation workers, data cleaners, and scheduled cron jobs running unattended on Linux servers.</p>
-      <p>
-        <kbd>Python</kbd> <kbd>Cron</kbd> <kbd>Linux Daemons</kbd> <kbd>SMTP Alerting</kbd>
-      </p>
-      <details>
-        <summary><b>Key Subsystems &amp; Implementation</b></summary>
-        <ul>
-          <li>Automated data extraction and partner feed sanitation scripts.</li>
-          <li>Daily operational reporting pipelines with automated email delivery.</li>
-          <li>Deterministic error handling with clean system exit codes.</li>
-        </ul>
-      </details>
-    </td>
-  </tr>
-</table>
+I find where information gets stuck, then build what gets it moving:
+- **Spot the pattern**: Notice where a team gets slowed down or why someone is manually doing the same check twice.
+- **Build the fix**: Write a clean script, clean up messy data, or create a simple tool.
+- **Automate it**: If a task needs to run every morning, code should handle it in the background without needing a person to remember.
+- **Keep it calm**: No bloat, no unnecessary dependencies, and no complicated setup. Software should do its job fast and stay out of the way.
 
 ---
 
-### Technical Manifest
+### Projects & Repositories
 
-```yaml
-data_infrastructure:
-  querying_storage:    [Python, SQL, Google BigQuery, MongoDB, Pandas, NumPy]
-  search_intelligence: [Google for Jobs, Google Search Console API, Schema.org, Structured Data, Technical SEO]
-  pipelines_etl:       [BigQuery Sync, Feed Sanitation, Schema Anomaly Detection, State Diffs]
+#### 1. [Python](https://github.com/saidixitn/Python) — Automated Data Operations Fleet
 
-automation_orchestration:
-  runtime_daemons:     [PM2, Cron, Linux Daemons, Docker, Headless Scrapers]
-  monitoring_alerts:   [Change-Detection Webhooks, Telegram Bots, SMTP Alerting, Feed Health Checks]
-  integrations:        [REST APIs, Google Sheets API, WebSockets, Vercel Edge Runtime]
-
-artificial_intelligence:
-  models_evaluation:   [LLMs, OpenAI API, Ollama, Prompt Architecture, Output Evaluation]
-  credentials:         ["AI Foundations" by OpenAI Academy (ID: c92ba288-81e6-4a41-ba20-f11055010ed8)]
-
-web_systems_tooling:
-  backend_runtimes:    [Node.js, Express, Python (FastAPI / Flask)]
-  frontend_philosophy: [Vanilla JavaScript, Semantic HTML5, Pure CSS Motion, Zero-Framework UI]
-```
+- **What it is**: A collection of background scripts that run 24/7 on a server to move and sync data between databases, spreadsheets, and data warehouses.
+- **Why I built it**: Checking partner feeds, doing daily data imports, and updating spreadsheets by hand takes hours and leads to mistakes. I built this fleet so code handles all routine data operations automatically every morning.
+- **How it works**: Built in Python and kept running continuously with PM2 (a Linux process manager). The scripts pull records from MongoDB, clean up the formatting, stream data into Google BigQuery for analytics, and sync metrics directly to Google Sheets.
 
 ---
 
-### Selected Technical Writing
+#### 2. [antigravity-nodejs](https://github.com/saidixitn/antigravity-nodejs) — Fast Backend Engine for MongoDB
 
-In-depth post-mortems and architecture breakdowns from building production systems:
+- **What it is**: A clean, lightweight Node.js backend designed to run fast searches and queries across large MongoDB databases.
+- **Why I built it**: Many backend frameworks are heavy and slow down when handling large volumes of database records. I wanted a lean API server that connects directly to the database without extra bloat.
+- **How it works**: Built with Node.js and Express. It uses a "dual-mode" setup: small test tasks run locally on your own machine, while production tasks dynamically connect to secure cloud databases. It streams database records in chunks so the server never runs out of memory.
+
+---
+
+#### 3. [Job-Posting-Alerts](https://github.com/saidixitn/Job-Posting-Alerts) — Search Engine Indexing & Schema Monitor
+
+- **What it is**: A monitoring bot that checks whether structured job listings are showing up properly on Google for Jobs, and alerts the team if anything breaks.
+- **Why I built it**: When a website makes a small coding error in its structured schema, Google can stop showing its job listings. If nobody notices, the site loses visitors for weeks.
+- **How it works**: Runs automatically on a schedule. Instead of sending spammy alerts every day, it compares today's run with yesterday's run. If it detects a drop or an error, it sends an immediate notification via Telegram and webhooks with details on what broke.
+
+---
+
+#### 4. [jobinsights](https://github.com/saidixitn/jobinsights) — Privacy-Friendly Web Analytics
+
+- **What it is**: A tiny website analytics tool that counts visitors and tracks page performance without using tracking cookies.
+- **Why I built it**: Standard tools like Google Analytics are heavy, slow down web pages, and require annoying cookie banner popups. I wanted an analytics engine that gives useful numbers while respecting user privacy.
+- **How it works**: Uses a tiny JavaScript tracking script (under 2 KB) that logs page views and performance vitals. Because it does not store personal data or use tracking cookies, it loads instantly and complies with privacy laws out of the box.
+
+---
+
+#### 5. [daybook](https://github.com/saidixitn/daybook) — Zero-Backend Developer Ledger
+
+- **What it is**: A minimal task and notes tracker that runs completely inside your web browser.
+- **Why I built it**: Most note-taking and to-do apps require creating accounts, logging in, and waiting for slow servers. I wanted a tool that opens instantly, works without an internet connection, and never requires server maintenance.
+- **How it works**: Built with plain HTML, CSS, and vanilla JavaScript. It saves all your notes and task history directly in your browser's local storage. There is no backend server to pay for or maintain.
+
+---
+
+#### 6. [Automation](https://github.com/saidixitn/Automation) — Scheduled Scripts & Daemons
+
+- **What it is**: A set of standalone Python scripts that automate routine jobs like web scraping and email reports.
+- **Why I built it**: To save time on repetitive daily computer tasks by letting scheduled scripts do the heavy lifting in the background.
+- **How it works**: Runs on automated timers (cron). The scripts fetch data from websites and APIs, format the results into clean summaries, and automatically email reports to stakeholders.
+
+---
+
+#### 7. [google-paa-scraper](https://github.com/saidixitn/google-paa-scraper) — Search Question Crawler
+
+- **What it is**: A Python crawler that gathers Google's "People Also Ask" questions for any search topic.
+- **Why I built it**: To understand what real people are searching for online and help research search trends.
+- **How it works**: Takes a search keyword, queries Google, expands the related questions, and maps out the question tree so you can see what topics users care about most.
+
+---
+
+### What I Use
+
+- **Languages**: Python, JavaScript, SQL, HTML, CSS
+- **Databases & Warehouses**: Google BigQuery, MongoDB
+- **Automation & Tools**: PM2, Cron, Git, GitHub Actions, Google Sheets API
+- **Web & APIs**: Node.js, Express, REST APIs
+
+---
+
+### Writing & Articles
+
+I also write about what I learn while building these systems:
 
 - [**Alerts people trust: what I learned building a monitoring bot**](https://saidixit.vercel.app/blog/alerts-people-trust)  
-  *Why alerting on change matters more than alerting on state, and how to stop alert fatigue.*
+  *Why sending too many alerts causes teams to ignore them, and how to alert only on meaningful changes.*
 
 - [**Why job postings drop out of Google for Jobs**](https://saidixit.vercel.app/blog/why-job-postings-drop-out-of-google-for-jobs)  
-  *Common schema failures, crawl timing issues, and indexing mechanics observed across millions of jobs.*
+  *Common coding errors that cause Google to remove listings from search results.*
 
 - [**Daybook: building without a backend**](https://saidixit.vercel.app/blog/daybook-no-backend)  
-  *How to build useful developer tools that run entirely in the browser without server maintenance.*
+  *How to build fast, useful tools that run entirely in the browser with zero server costs.*
 
 ---
 
 <div align="center">
-  <sub>Sai Dixit Naidu &nbsp;·&nbsp; Visakhapatnam, India &nbsp;·&nbsp; <a href="https://saidixit.vercel.app/">saidixit.vercel.app</a></sub>
+  <sub>Sai Dixit Naidu · Visakhapatnam, India · <a href="https://saidixit.vercel.app/">saidixit.vercel.app</a></sub>
 </div>
